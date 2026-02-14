@@ -12,10 +12,10 @@
 
 * 🛠 **Что я делаю прямо сейчас:** 
   - 🌐 **Web Site Messenger** — создаю альтернативу на случай падения Telegram 😅 `Python` `Tkinter` `SQL`
-  - 🗡️ **Vindicta Imperatoris** — 3D-экшен в историческом сеттинге на движке `Ursina`
+  - 🗡️ **[**Vindicta Imperatoris**](https://github.com/st4lt/Vindicta-Imperatoris)** — 3D-экшен в историческом сеттинге на движке `Ursina`
   - 🔐 **Password Vault** — защищенное хранилище паролей с упором на архитектуру данных `Flet` / `Tkinter`
 
 📫 **Контакты** 
-  - GitHub [st4lt] https://github.com/st4lt]
+  - GitHub [st4lt](https://github.com/st4lt)
   - Telegram [...] <br>
 © 2026 st4lt
