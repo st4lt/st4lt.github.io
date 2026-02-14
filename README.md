@@ -1,2 +1,6 @@
 # st4lt.github.io
-My digital sandbox 👾 | Python Developer &amp; Creative Coder
+
+Выбери язык / Choose language:
+
+- [🇷🇺 Читать на русском](README.ru.md)
+- [🇬🇧 Read in English](README.en.md)
