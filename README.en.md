@@ -13,7 +13,7 @@ Here you will find information about my skills and projects. I build games and a
 
 ### 🚀 Projects in Development:
 * 🌐 **Web Site Messenger** — creating an alternative in case Telegram goes down 😅 `Python` `Tkinter` `SQL`
-* 🗡️ **Vindicta Imperatoris** — a 3D historical action game powered by the `Ursina` engine
+* 🗡️ **[Vindicta Imperatoris](https://github.com/st4lt/Vindicta-Imperatoris)** — a 3D historical action game powered by the `Ursina` engine
 * 🔐 **Password Vault** — a secure credential manager focused on data architecture and privacy `Flet` / `Tkinter`
 
 ### 📫 Contacts 
