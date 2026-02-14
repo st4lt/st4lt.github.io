@@ -17,4 +17,5 @@
 
 📫 **Контакты** 
   - GitHub [st4lt] https://github.com/st4lt]
-  - Telegram [...]
+  - Telegram [...] <br>
+© 2026 st4lt
