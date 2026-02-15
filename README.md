@@ -3,10 +3,7 @@
   # ⚡ st4lt.github.io ⚡
   
 # whoami
-```
-Developer & Game Creator
-"From 3D arenas to secure vaults"
-```
+<p align="center"> Developer & Game Creator | From 3D arenas to secure vaults</p>
   
   <br>
   
