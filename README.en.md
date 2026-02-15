@@ -1,7 +1,7 @@
 <a name="english"></a>
 # 💻 Hi, I'm st4lt
 
-<h2> Personal mini-site of a Python Developer 🐍</h2>
+<h2> You are on the personal mini-site of a Python developer 🐍</h2>
 
 ### 👨‍💻 About Me
 Here you will find information about my skills and projects. I build games and applications, turning ideas into working code.
