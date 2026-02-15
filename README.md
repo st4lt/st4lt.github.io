@@ -8,7 +8,7 @@
   print("Python Developer & Game Creator")
   print("From 3D arenas to secure vaults")
 ```
-</div>
+
   <br>
   
   | 🌐 САЙТ | 🐙 GITHUB | ✈️ Telegram |
