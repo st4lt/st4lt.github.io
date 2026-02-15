@@ -1,9 +1,17 @@
 <div align="center">
+  <img src="https://github.com/st4lt.png" width="150" style="border-radius: 50%; border: 4px solid #00ff00; box-shadow: 0 0 30px #00ff00;">
   
   # ⚡ st4lt.github.io ⚡
   
+  ```python
+  # whoami
+  print("Python Developer & Game Creator")
+  print("From 3D arenas to secure vaults")
+```
 # whoami
-<p align="center"> Developer & Game Creator | From 3D arenas to secure vaults</p>
+<p align="center"> Developer & Game Creator | From 3D arenas to secure vaults</p> <br>
+<img src="https://github.com/st4lt.png" width="120" style="border-radius: 50%; box-shadow: 0 0 20px #00ff00; border: 2px solid #00ff00;">
+<br>
   
   <br>
   
