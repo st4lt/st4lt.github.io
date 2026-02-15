@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://github.com/st4lt.png" width="150" style="border-radius: 50%; border: 4px solid #00ff00; box-shadow: 0 0 30px #00ff00;">
   
-  # ⚡ st4lt.github.io ⚡
+  <h2> ⚡ st4lt.github.io ⚡ </h2>
   
   ```python
   # whoami
