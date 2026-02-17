@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="https://github.com/st4lt.png" width="150" style="border-radius: 50%; border: 4px solid #00ff00; box-shadow: 0 0 30px #00ff00;">
-  
+  <img src="https://github.com/user-attachments/assets/7985f66b-63f4-4618-9944-9925d11066db" width="150" style="border-radius: 50%; border: 4px solid #00ff00; box-shadow: 0 0 30px #00ff00;">
+
   <h2> ⚡ st4lt.github.io ⚡ </h2>
   
   ```python
