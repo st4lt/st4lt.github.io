@@ -31,8 +31,9 @@ Turning ideas into working code.</span>
 
 🗡️ <strong>Vindicta Imperatoris</strong>
    3D action game powered by Ursina engine
-   🔗 <a href="https://github.com/st4lt/Vindicta-Imperatoris">github.com/st4lt/Vindicta-Imperatoris</a>
 
 🔐 <strong>Password Vault</strong>
    Secure credential manager <span>Flet/Tkinter</span>
 </pre>
+
+© 2026 st4lt
