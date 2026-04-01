@@ -2,27 +2,24 @@
 <a name="russian"></a>
 
 # 💻 Привет, я st4lt
-
+<pre>
 <h2> Вы на странице Python разработчика 🐍</h2>
-
-<br>
 
 <span style="color: #8be9fd">Python Developer & Game Creator  
 From 3D arenas to secure vaults</span>
 
-<br><br>
-
+<br>
 🐍 Python-разработчик, создаю игры и приложения.  
 Превращаю идеи в работающий код.
-
-<br><br>
-
+<br>
+</pre>
+<pre>
 **🛠 Стек технологий**  
 • Языки: Python, HTML, SQL  
 • Фреймворки: Pygame, Ursina, Tkinter, Flet  
 • Инструменты: Git, GitHub, VS Code
-
-<br><br>
+</pre>
+<br>
 
 **🚀 Текущие проекты**
 🌐 **Web Site Messenger [Альтернатива Telegram]**  
