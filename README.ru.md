@@ -7,29 +7,34 @@
 
 <br>
 
-<pre>
-<span style="color: #8be9fd">
-🐍 Python-разработчик, создаю игры и приложения.
-Превращаю идеи в работающий код.</span>
-</pre>
+<span style="color: #8be9fd">Python Developer & Game Creator  
+From 3D arenas to secure vaults</span>
 
-<pre>
-<span style="color: #8be9fd"><strong>🛠 Стек технологий</strong>
-• Языки: Python, HTML, SQL
-• Фреймворки: Pygame, Ursina, Tkinter, Flet
-• Инструменты: Git, GitHub, VS Code</span>
-</pre>
+<br><br>
 
-<pre>
-<span style="color: #8be9fd"><strong>🚀 Текущие проекты</strong>
-🌐 <strong>Web Site Messenger (Альтернатива Telegram) </strong>
+🐍 Python-разработчик, создаю игры и приложения.  
+Превращаю идеи в работающий код.
+
+<br><br>
+
+**🛠 Стек технологий**  
+• Языки: Python, HTML, SQL  
+• Фреймворки: Pygame, Ursina, Tkinter, Flet  
+• Инструменты: Git, GitHub, VS Code
+
+<br><br>
+
+**🚀 Текущие проекты**
+🌐 **Web Site Messenger [Альтернатива Telegram]**  
    Python/Tkinter/SQLite
 
-🗡️ <strong>Vindicta Imperatoris</strong>
-   3D-экшен на движке Ursina
-🔗 [github.com/st4lt/Vindicta-Imperatoris](https://github.com/st4lt/Vindicta-Imperatoris)
-   
-🔐 <strong>Password Vault</strong>
+🗡️ **Vindicta Imperatoris**  
+   3D-экшен на движке Ursina  
+   🔗 [github.com/st4lt/Vindicta-Imperatoris](https://github.com/st4lt/Vindicta-Imperatoris)
+
+🔐 **Password Vault**  
    Защищенное хранилище паролей
-   Flet/Tkinter</span>
-</pre>
+   Flet/Tkinter
+
+<br>
+© 2026 st4lt
