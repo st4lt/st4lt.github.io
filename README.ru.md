@@ -37,18 +37,3 @@ From 3D arenas to secure vaults</span>
 🔐 <strong>Password Vault</strong>
    Защищенное хранилище паролей (Flet/Tkinter)</span>
 </pre>
-
-<pre>
-<span style="color: #50fa7b">$</span> <span style="color: #f1fa8c">cat contacts.txt</span>
-<span style="color: #8be9fd"><strong>📫 Контакты</strong>
-
-🐙 <a href="https://github.com/st4lt">GitHub: st4lt</a>
-📧 <a href="mailto:st4ltdev@yandex.ru">Email: st4ltdev@yandex.ru</a>
-💬 Telegram: [скоро]</span>
-</pre>
-
-<p align="center">
-  © 2026 st4lt
-</p>  - Email [st4ltdev@yandex.ru](mailto:st4ltdev@yandex.ru)
-  - Telegram [...] <br>
-© 2026 st4lt
