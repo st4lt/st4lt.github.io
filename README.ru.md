@@ -3,7 +3,7 @@
 
 # 💻 Привет, я st4lt
 <pre>
-<h2> Вы на странице Python разработчика 🐍</h2>
+<h2>Вы на странице Python разработчика 🐍</h2>
 
 <span style="color: #8be9fd">Python Developer & Game Creator  
 From 3D arenas to secure vaults</span>
@@ -21,7 +21,7 @@ From 3D arenas to secure vaults</span>
 </pre>
 <br>
 
-**🚀 Текущие проекты**
+# 🚀 Текущие проекты
 🌐 **Web Site Messenger [Альтернатива Telegram]**  
    Python/Tkinter/SQLite
 
