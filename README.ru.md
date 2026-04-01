@@ -13,8 +13,6 @@ From 3D arenas to secure vaults</span>
 </pre>
 
 <pre>
-<span style="color: #8be9fd"><strong>💻 Привет, я st4lt</strong>
-
 🐍 Python-разработчик, создаю игры и приложения.
 Превращаю идеи в работающий код.</span>
 </pre>
