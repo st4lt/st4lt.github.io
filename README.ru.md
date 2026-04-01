@@ -2,35 +2,38 @@
 <a name="russian"></a>
 
 # 💻 Привет, я st4lt
-<pre>
-<h2>Вы на странице Python разработчика 🐍</h2>
 
-<span style="color: #8be9fd">Python Developer & Game Creator  
+<h2> Вы на странице Python разработчика 🐍</h2>
+
+<br>
+
+<pre>
+<span style="color: #8be9fd">Python Developer & Game Creator
 From 3D arenas to secure vaults</span>
-
-<br>
-🐍 Python-разработчик, создаю игры и приложения.  
-Превращаю идеи в работающий код.
-<br>
 </pre>
+
 <pre>
-**🛠 Стек технологий**  
-• Языки: Python, HTML, SQL  
-• Фреймворки: Pygame, Ursina, Tkinter, Flet  
-• Инструменты: Git, GitHub, VS Code
+🐍 Python-разработчик, создаю игры и приложения.
+Превращаю идеи в работающий код.</span>
 </pre>
-<br>
 
-## 🚀 Текущие проекты
-🌐 **Web Site Messenger [Альтернатива Telegram]**  
-<font style="color: #ff8c00;">Python/Tkinter/SQLite</font>
+<pre>
+<span style="color: #8be9fd"><strong>🛠 Стек технологий</strong>
+• Языки: Python, HTML, SQL
+• Фреймворки: Pygame, Ursina, Tkinter, Flet
+• Инструменты: Git, GitHub, VS Code</span>
+</pre>
 
-🗡️ **Vindicta Imperatoris**  
-<font color="#ff8c00">3D-экшен на движке Ursina</font>
-   🔗 [Vindi](https://github.com/st4lt/Vindicta-Imperatoris)
+<pre>
+<span style="color: #8be9fd"><strong>🚀 Текущие проекты</strong>
 
-🔐 **Password Vault**  
-   Защищенное хранилище паролей
-   <font color="#ff8c00">Flet/Tkinter</font>
-<br>
-© 2026 st4lt
+🌐 <strong>Web Site Messenger</strong>
+   Альтернатива Telegram на Python/Tkinter/SQLite
+
+🗡️ <strong>Vindicta Imperatoris</strong>
+   3D-экшен на движке Ursina
+   🔗 <a href="https://github.com/st4lt/Vindicta-Imperatoris">github.com/st4lt/Vindicta-Imperatoris</a>
+
+🔐 <strong>Password Vault</strong>
+   Защищенное хранилище паролей <span>Flet/Tkinter</span>
+</pre>
