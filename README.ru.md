@@ -17,5 +17,6 @@
 
 📫 **Контакты** 
   - GitHub [st4lt](https://github.com/st4lt)
+  - Email [st4ltdev@yandex.ru](mailto:st4ltdev@yandex.ru)
   - Telegram [...] <br>
 © 2026 st4lt
