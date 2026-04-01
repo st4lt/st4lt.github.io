@@ -28,7 +28,7 @@
 
 🗡️ <strong>Vindicta Imperatoris</strong>
    3D-экшен на движке Ursina
-🔗 https://github.com/st4lt/Vindicta-Imperatoris
+🔗 <a href="https://github.com/st4lt/Vindicta-Imperatoris">github.com/st4lt/Vindicta-Imperatoris</a>
 
 🔐 <strong>Защищенное хранилище паролей</strong>
    <span>Flet/Tkinter</span>
