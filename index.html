@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>st4lt | Python Developer</title>
     <style>
         * {
@@ -13,8 +13,8 @@
 
         body {
             background: #0a0c10;
-            font-family: 'Courier New', 'Fira Code', 'JetBrains Mono', monospace;
-            padding: 20px;
+            font-family: 'Courier New', 'Fira Code', monospace;
+            padding: 12px;
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -22,19 +22,305 @@
         }
 
         .container {
-            max-width: 700px;
             width: 100%;
+            max-width: 700px;
             margin: 0 auto;
         }
 
-        /* Терминальный стиль */
         .terminal {
             background: #0f1117;
             border-radius: 16px;
             border: 1px solid #2d2f3a;
             overflow: hidden;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            width: 100%;
         }
+
+        .terminal-header {
+            background: #1a1c24;
+            padding: 12px 16px;
+            border-bottom: 1px solid #2d2f3a;
+            display: flex;
+            gap: 8px;
+        }
+
+        .terminal-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .dot-red { background: #ff5f56; }
+        .dot-yellow { background: #ffbd2e; }
+        .dot-green { background: #27c93f; }
+
+        .terminal-body {
+            padding: 20px 16px;
+        }
+
+        /* Текст */
+        .line {
+            margin-bottom: 16px;
+            line-height: 1.5;
+            font-size: 14px;
+            color: #e4e4e7;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .prompt {
+            color: #50fa7b;
+            font-weight: bold;
+        }
+
+        .command {
+            color: #f1fa8c;
+        }
+
+        .output {
+            color: #8be9fd;
+            margin-left: 16px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            padding-left: 12px;
+            border-left: 2px solid #6272a4;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        a {
+            color: #8be9fd;
+            text-decoration: none;
+            border-bottom: 1px dashed #6272a4;
+            word-break: break-all;
+        }
+        a:hover {
+            color: #ff79c6;
+        }
+
+        /* Кнопки языков */
+        .lang-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+
+        .lang-btn {
+            background: #1a1c24;
+            border: 1px solid #2d2f3a;
+            padding: 10px 18px;
+            border-radius: 10px;
+            color: #8be9fd;
+            font-family: monospace;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+            flex: 0 0 auto;
+        }
+        .lang-btn:hover {
+            background: #2d2f3a;
+            border-color: #6272a4;
+            color: #ff79c6;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: #2d2f3a;
+            margin: 24px 0 16px;
+        }
+
+        /* ===== АДАПТАЦИЯ ПОД ТЕЛЕФОН ===== */
+        @media (max-width: 550px) {
+            body {
+                padding: 8px;
+            }
+            .terminal-body {
+                padding: 16px 12px;
+            }
+            .line {
+                font-size: 13px;
+                margin-bottom: 14px;
+            }
+            .output {
+                margin-left: 12px;
+                padding-left: 10px;
+                font-size: 13px;
+            }
+            .lang-btn {
+                padding: 8px 14px;
+                font-size: 13px;
+            }
+            .prompt, .command {
+                font-size: 13px;
+            }
+        }
+
+        /* Скрытие/показ языков */
+        .lang-content {
+            display: none;
+        }
+        .lang-content.active {
+            display: block;
+        }
+
+        /* Заголовки в output */
+        .output strong {
+            color: #ffb86c;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 550px) {
+            .output strong {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-dot dot-red"></div>
+            <div class="terminal-dot dot-yellow"></div>
+            <div class="terminal-dot dot-green"></div>
+        </div>
+        <div class="terminal-body">
+            
+            <div class="lang-buttons">
+                <button class="lang-btn" onclick="showLang('ru')">🇷🇺 Русская</button>
+                <button class="lang-btn" onclick="showLang('en')">🇬🇧 English</button>
+            </div>
+
+            <!-- RUSSIAN -->
+            <div id="lang-ru" class="lang-content active">
+                <div class="line">
+                    <span class="prompt">$</span> <span class="command">whoami</span>
+                </div>
+                <div class="output">
+                    Python Developer & Game Creator<br>
+                    From 3D arenas to secure vaults
+                </div>
+
+                <div class="line">
+                    <span class="prompt">$</span> <span class="command">cat about.txt</span>
+                </div>
+                <div class="output">
+                    <strong>💻 Привет, я st4lt</strong><br><br>
+                    🐍 Python-разработчик, создаю игры и приложения.<br>
+                    Превращаю идеи в работающий код.
+                </div>
+
+                <div class="line">
+                    <span class="prompt">$</span> <span class="command">ls -la /skills/</span>
+                </div>
+                <div class="output">
+                    <strong>🛠 Стек технологий</strong><br>
+                    • Языки: Python, HTML, SQL<br>
+                    • Фреймворки: Pygame, Ursina, Tkinter, Flet<br>
+                    • Инструменты: Git, GitHub, VS Code
+                </div>
+
+                <div class="line">
+                    <span class="prompt">$</span> <span class="command">./projects --status</span>
+                </div>
+                <div class="output">
+                    <strong>🚀 Текущие проекты</strong><br><br>
+                    🌐 <strong>Web Site Messenger</strong><br>
+                    &nbsp;&nbsp;Альтернатива Telegram на Python/Tkinter/SQLite<br><br>
+                    🗡️ <strong>Vindicta Imperatoris</strong><br>
+                    &nbsp;&nbsp;3D-экшен на движке Ursina<br>
+                    &nbsp;&nbsp;🔗 <a href="https://github.com/st4lt/Vindicta-Imperatoris">github.com/st4lt/Vindicta-Imperatoris</a><br><br>
+                    🔐 <strong>Password Vault</strong><br>
+                    &nbsp;&nbsp;Защищенное хранилище паролей (Flet/Tkinter)
+                </div>
+
+                <div class="line">
+                    <span class="prompt">$</span> <span class="command">cat contacts.txt</span>
+                </div>
+                <div class="output">
+                    <strong>📫 Контакты</strong><br><br>
+                    🐙 <a href="https://github.com/st4lt">GitHub: st4lt</a><br>
+                    📧 <a href="mailto:st4ltdev@yandex.ru">Email: st4ltdev@yandex.ru</a><br>
+                    💬 Telegram: [скоро]
+                </div>
+            </div>
+
+            <!-- ENGLISH -->
+            <div id="lang-en" class="lang-content">
+                <div class="line">
+                    <span class="prompt">$</span> <span class="command">whoami</span>
+                </div>
+                <div class="output">
+                    Python Developer & Game Creator<br>
+                    From 3D arenas to secure vaults
+                </div>
+
+                <div class="line">
+                    <span class="prompt">$</span> <span class="command">cat about.txt</span>
+                </div>
+                <div class="output">
+                    <strong>💻 Hi, I'm st4lt</strong><br><br>
+                    🐍 Python developer building games and applications.<br>
+                    Turning ideas into working code.
+                </div>
+
+                <div class="line">
+                    <span class="prompt">$</span> <span class="command">ls -la /skills/</span>
+                </div>
+                <div class="output">
+                    <strong>🛠 Tech Stack</strong><br>
+                    • Languages: Python, HTML, SQL<br>
+                    • Frameworks: Pygame, Ursina, Tkinter, Flet<br>
+                    • Tools: Git, GitHub, VS Code
+                </div>
+
+                <div class="line">
+                    <span class="prompt">$</span> <span class="command">./projects --status</span>
+                </div>
+                <div class="output">
+                    <strong>🚀 Current Projects</strong><br><br>
+                    🌐 <strong>Web Site Messenger</strong><br>
+                    &nbsp;&nbsp;Telegram alternative built with Python/Tkinter/SQLite<br><br>
+                    🗡️ <strong>Vindicta Imperatoris</strong><br>
+                    &nbsp;&nbsp;3D action game powered by Ursina engine<br>
+                    &nbsp;&nbsp;🔗 <a href="https://github.com/st4lt/Vindicta-Imperatoris">github.com/st4lt/Vindicta-Imperatoris</a><br><br>
+                    🔐 <strong>Password Vault</strong><br>
+                    &nbsp;&nbsp;Secure credential manager (Flet/Tkinter)
+                </div>
+
+                <div class="line">
+                    <span class="prompt">$</span> <span class="command">cat contacts.txt</span>
+                </div>
+                <div class="output">
+                    <strong>📫 Contacts</strong><br><br>
+                    🐙 <a href="https://github.com/st4lt">GitHub: st4lt</a><br>
+                    📧 <a href="mailto:st4ltdev@yandex.ru">Email: st4ltdev@yandex.ru</a><br>
+                    💬 Telegram: [coming soon]
+                </div>
+            </div>
+
+            <hr>
+            <div class="line" style="text-align: center; color: #6272a4; font-size: 12px;">
+                © 2026 st4lt | python --version 3.12
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function showLang(lang) {
+    document.getElementById('lang-ru').classList.remove('active');
+    document.getElementById('lang-en').classList.remove('active');
+    if (lang === 'ru') {
+        document.getElementById('lang-ru').classList.add('active');
+    } else {
+        document.getElementById('lang-en').classList.add('active');
+    }
+}
+</script>
+</body>
+                    </html>        }
 
         /* Заголовок терминала */
         .terminal-header {
