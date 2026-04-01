@@ -21,17 +21,16 @@ From 3D arenas to secure vaults</span>
 </pre>
 <br>
 
-# 🚀 Текущие проекты
+## 🚀 Текущие проекты
 🌐 **Web Site Messenger [Альтернатива Telegram]**  
    Python/Tkinter/SQLite
 
 🗡️ **Vindicta Imperatoris**  
    3D-экшен на движке Ursina  
-   🔗 [github.com/st4lt/Vindicta-Imperatoris](https://github.com/st4lt/Vindicta-Imperatoris)
+   🔗 [Vindi](https://github.com/st4lt/Vindicta-Imperatoris)
 
 🔐 **Password Vault**  
    Защищенное хранилище паролей
    Flet/Tkinter
-
 <br>
 © 2026 st4lt
