@@ -35,3 +35,5 @@ From 3D arenas to secure vaults</span>
 🔐 <strong>Password Vault</strong>
    Защищенное хранилище паролей <span>Flet/Tkinter</span>
 </pre>
+
+© 2026 st4lt
