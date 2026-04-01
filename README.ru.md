@@ -22,14 +22,14 @@
 
 <pre>
 <span style="color: #8be9fd"><strong>🚀 Текущие проекты</strong>
-
 🌐 <strong>Web Site Messenger</strong>
    Альтернатива Telegram на Python/Tkinter/SQLite
 
 🗡️ <strong>Vindicta Imperatoris</strong>
    3D-экшен на движке Ursina
-   🔗 <a href="https://github.com/st4lt/Vindicta-Imperatoris">https://github.com/st4lt/Vindicta-Imperatoris</a>
-
+</pre>
+🔗 <a href="https://github.com/st4lt/Vindicta-Imperatoris">https://github.com/st4lt/Vindicta-Imperatoris</a>
+<pre>
 🔐 <strong>Password Vault</strong>
    Защищенное хранилище паролей (Flet/Tkinter)</span>
 </pre>
