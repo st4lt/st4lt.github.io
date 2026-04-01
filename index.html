@@ -1,40 +1,322 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>st4lt.github.io</title>
-  <style>
-    body {
-      background: black;
-      color: #00ff00;
-      font-family: monospace;
-      text-align: center;
-      padding: 15px;
-      margin: 0;
-    }
-    img.avatar {
-      width: 120px;  /* Чуть меньше */
-      border-radius: 50%;
-      border: 3px solid #00ff00;
-      box-shadow: 0 0 20px #00ff00;
-    }
-    h2 {
-      color: #00ff00;
-      text-shadow: 0 0 10px #00ff00;
-      font-size: 22px;  /* Уменьшил */
-      margin: 15px 0;
-    }
-    pre {
-      font-size: 14px;  /* Уменьшил */
-      line-height: 1.4;
-      color: #ffff00;
-      text-shadow: 0 0 5px #00ff00;
-      margin: 10px 0;
-    }
-    .btn {
-      display: block;
-      background: #00ff00;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>st4lt | Python Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0c10;
+            font-family: 'Courier New', 'Fira Code', 'JetBrains Mono', monospace;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Терминальный стиль */
+        .terminal {
+            background: #0f1117;
+            border-radius: 16px;
+            border: 1px solid #2d2f3a;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+        }
+
+        /* Заголовок терминала */
+        .terminal-header {
+            background: #1a1c24;
+            padding: 12px 16px;
+            border-bottom: 1px solid #2d2f3a;
+            display: flex;
+            gap: 8px;
+        }
+
+        .terminal-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .dot-red { background: #ff5f56; }
+        .dot-yellow { background: #ffbd2e; }
+        .dot-green { background: #27c93f; }
+
+        /* Тело терминала */
+        .terminal-body {
+            padding: 24px;
+        }
+
+        /* Текст */
+        .line {
+            margin-bottom: 16px;
+            line-height: 1.5;
+            font-size: 14px;
+            color: #e4e4e7;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .prompt {
+            color: #50fa7b;
+            font-weight: bold;
+        }
+
+        .command {
+            color: #f1fa8c;
+        }
+
+        .output {
+            color: #8be9fd;
+            margin-left: 20px;
+            margin-top: 6px;
+            margin-bottom: 12px;
+            padding-left: 12px;
+            border-left: 2px solid #6272a4;
+        }
+
+        /* Ссылки */
+        a {
+            color: #8be9fd;
+            text-decoration: none;
+            border-bottom: 1px dashed #6272a4;
+            transition: all 0.2s;
+        }
+
+        a:hover {
+            color: #ff79c6;
+            border-bottom-color: #ff79c6;
+        }
+
+        /* Кнопки языка */
+        .lang-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            margin-bottom: 16px;
+        }
+
+        .lang-btn {
+            background: #1a1c24;
+            border: 1px solid #2d2f3a;
+            padding: 8px 16px;
+            border-radius: 8px;
+            color: #8be9fd;
+            font-family: monospace;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-block;
+        }
+
+        .lang-btn:hover {
+            background: #2d2f3a;
+            border-color: #6272a4;
+            color: #ff79c6;
+        }
+
+        /* Разделитель */
+        hr {
+            border: none;
+            height: 1px;
+            background: #2d2f3a;
+            margin: 20px 0;
+        }
+
+        /* Для телефона */
+        @media (max-width: 550px) {
+            body {
+                padding: 12px;
+            }
+            .terminal-body {
+                padding: 18px;
+            }
+            .line {
+                font-size: 13px;
+            }
+            .output {
+                margin-left: 12px;
+                padding-left: 8px;
+            }
+            .lang-btn {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+        }
+
+        /* Скрыть/показать языки */
+        .lang-content {
+            display: none;
+        }
+        .lang-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-dot dot-red"></div>
+                <div class="terminal-dot dot-yellow"></div>
+                <div class="terminal-dot dot-green"></div>
+            </div>
+            <div class="terminal-body">
+                
+                <!-- Кнопки выбора языка -->
+                <div class="lang-buttons">
+                    <button class="lang-btn" onclick="showLang('ru')">🇷🇺 Русская версия</button>
+                    <button class="lang-btn" onclick="showLang('en')">🇬🇧 English version</button>
+                </div>
+
+                <!-- РУССКАЯ ВЕРСИЯ -->
+                <div id="lang-ru" class="lang-content active">
+                    <div class="line">
+                        <span class="prompt">$</span> <span class="command">whoami</span>
+                    </div>
+                    <div class="output">
+                        Python Developer & Game Creator<br>
+                        From 3D arenas to secure vaults
+                    </div>
+
+                    <div class="line">
+                        <span class="prompt">$</span> <span class="command">cat about.txt</span>
+                    </div>
+                    <div class="output">
+                        <strong>💻 Привет, я st4lt</strong><br><br>
+                        🐍 Python-разработчик, создаю игры и приложения.<br>
+                        Превращаю идеи в работающий код.
+                    </div>
+
+                    <div class="line">
+                        <span class="prompt">$</span> <span class="command">ls -la /skills/</span>
+                    </div>
+                    <div class="output">
+                        <strong>🛠 Стек технологий</strong><br>
+                        • Языки: Python, HTML, SQL<br>
+                        • Фреймворки: Pygame, Ursina, Tkinter, Flet<br>
+                        • Инструменты: Git, GitHub, VS Code
+                    </div>
+
+                    <div class="line">
+                        <span class="prompt">$</span> <span class="command">./projects --status</span>
+                    </div>
+                    <div class="output">
+                        <strong>🚀 Текущие проекты</strong><br><br>
+                        🌐 <strong>Web Site Messenger</strong><br>
+                        &nbsp;&nbsp;Альтернатива Telegram на Python/Tkinter/SQLite<br><br>
+                        🗡️ <strong>Vindicta Imperatoris</strong><br>
+                        &nbsp;&nbsp;3D-экшен на движке Ursina<br>
+                        &nbsp;&nbsp;🔗 <a href="https://github.com/st4lt/Vindicta-Imperatoris">github.com/st4lt/Vindicta-Imperatoris</a><br><br>
+                        🔐 <strong>Password Vault</strong><br>
+                        &nbsp;&nbsp;Защищенное хранилище паролей (Flet/Tkinter)
+                    </div>
+
+                    <div class="line">
+                        <span class="prompt">$</span> <span class="command">cat contacts.txt</span>
+                    </div>
+                    <div class="output">
+                        <strong>📫 Контакты</strong><br><br>
+                        🐙 <a href="https://github.com/st4lt">GitHub: st4lt</a><br>
+                        📧 <a href="mailto:st4ltdev@yandex.ru">Email: st4ltdev@yandex.ru</a><br>
+                        💬 Telegram: [скоро]
+                    </div>
+                </div>
+
+                <!-- ENGLISH VERSION -->
+                <div id="lang-en" class="lang-content">
+                    <div class="line">
+                        <span class="prompt">$</span> <span class="command">whoami</span>
+                    </div>
+                    <div class="output">
+                        Python Developer & Game Creator<br>
+                        From 3D arenas to secure vaults
+                    </div>
+
+                    <div class="line">
+                        <span class="prompt">$</span> <span class="command">cat about.txt</span>
+                    </div>
+                    <div class="output">
+                        <strong>💻 Hi, I'm st4lt</strong><br><br>
+                        🐍 Python developer building games and applications.<br>
+                        Turning ideas into working code.
+                    </div>
+
+                    <div class="line">
+                        <span class="prompt">$</span> <span class="command">ls -la /skills/</span>
+                    </div>
+                    <div class="output">
+                        <strong>🛠 Tech Stack</strong><br>
+                        • Languages: Python, HTML, SQL<br>
+                        • Frameworks: Pygame, Ursina, Tkinter, Flet<br>
+                        • Tools: Git, GitHub, VS Code
+                    </div>
+
+                    <div class="line">
+                        <span class="prompt">$</span> <span class="command">./projects --status</span>
+                    </div>
+                    <div class="output">
+                        <strong>🚀 Current Projects</strong><br><br>
+                        🌐 <strong>Web Site Messenger</strong><br>
+                        &nbsp;&nbsp;Telegram alternative built with Python/Tkinter/SQLite<br><br>
+                        🗡️ <strong>Vindicta Imperatoris</strong><br>
+                        &nbsp;&nbsp;3D action game powered by Ursina engine<br>
+                        &nbsp;&nbsp;🔗 <a href="https://github.com/st4lt/Vindicta-Imperatoris">github.com/st4lt/Vindicta-Imperatoris</a><br><br>
+                        🔐 <strong>Password Vault</strong><br>
+                        &nbsp;&nbsp;Secure credential manager (Flet/Tkinter)
+                    </div>
+
+                    <div class="line">
+                        <span class="prompt">$</span> <span class="command">cat contacts.txt</span>
+                    </div>
+                    <div class="output">
+                        <strong>📫 Contacts</strong><br><br>
+                        🐙 <a href="https://github.com/st4lt">GitHub: st4lt</a><br>
+                        📧 <a href="mailto:st4ltdev@yandex.ru">Email: st4ltdev@yandex.ru</a><br>
+                        💬 Telegram: [coming soon]
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="line" style="text-align: center; color: #6272a4;">
+                    © 2026 st4lt | python --version 3.12
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showLang(lang) {
+            // Скрываем оба блока
+            document.getElementById('lang-ru').classList.remove('active');
+            document.getElementById('lang-en').classList.remove('active');
+            
+            // Показываем выбранный
+            if (lang === 'ru') {
+                document.getElementById('lang-ru').classList.add('active');
+            } else {
+                document.getElementById('lang-en').classList.add('active');
+            }
+        }
+    </script>
+</body>
+                                                                                    </html>      background: #00ff00;
       color: black;
       text-decoration: none;
       padding: 12px 0;  /* Уменьшил */
