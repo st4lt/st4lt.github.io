@@ -8,13 +8,11 @@
 <br>
 
 <pre>
-<span style="color: #f1fa8c">whoami</span>
 <span style="color: #8be9fd">Python Developer & Game Creator
 From 3D arenas to secure vaults</span>
 </pre>
 
 <pre>
- <span style="color: #f1fa8c">cat about.txt</span>
 <span style="color: #8be9fd"><strong>💻 Привет, я st4lt</strong>
 
 🐍 Python-разработчик, создаю игры и приложения.
