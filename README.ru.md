@@ -8,11 +8,7 @@
 <br>
 
 <pre>
-<span style="color: #8be9fd">Python Developer & Game Creator
-From 3D arenas to secure vaults</span>
-</pre>
-
-<pre>
+<span style="color: #8be9fd">
 🐍 Python-разработчик, создаю игры и приложения.
 Превращаю идеи в работающий код.</span>
 </pre>
@@ -27,13 +23,13 @@ From 3D arenas to secure vaults</span>
 <pre>
 <span style="color: #8be9fd"><strong>🚀 Текущие проекты</strong>
 
-🌐 <strong>Web Site Messenger</strong>
-   Альтернатива Telegram на Python/Tkinter/SQLite
+🌐 <strong>Web Альтернатива Telegram на случай отключения F</strong>
+   Python/Tkinter/SQLite
 
 🗡️ <strong>Vindicta Imperatoris</strong>
    3D-экшен на движке Ursina
    🔗 <a href="https://github.com/st4lt/Vindicta-Imperatoris">github.com/st4lt/Vindicta-Imperatoris</a>
 
-🔐 <strong>Password Vault</strong>
-   Защищенное хранилище паролей (Flet/Tkinter)</span>
+🔐 <strong>Защищенное хранилище паролей</strong>
+   <span>(Flet/Tkinter)</span>
 </pre>
