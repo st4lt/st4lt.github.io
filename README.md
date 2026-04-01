@@ -12,10 +12,9 @@
   <br>
   <div align="center">
     
-  |   🌐 САЙТ    |   🐙 GITHUB   |   ✈️ Telegram   |
-  |:---:|:---:|:---:|
-  | [![website](https://img.shields.io/badge/st4lt.github.io-00ff00?style=for-the-badge&logo=github&logoColor=black)](https://st4lt.github.io) | [![github](https://img.shields.io/badge/@st4lt-00ff00?style=for-the-badge&logo=github&logoColor=black)](https://github.com/st4lt) | [![telegram](https://img.shields.io/badge/@st4lt__dev-00ff00?style=for-the-badge&logo=telegram&logoColor=black)](https://t.me/st4lt_dev)
-  <br>
+  |   🌐 САЙТ    |   🐙 GITHUB   |   ✈️ TELEGRAM   |   📧 EMAIL   |
+|:---:|:---:|:---:|:---:|
+| [![website](https://img.shields.io/badge/st4lt.github.io-00ff00?style=for-the-badge&logo=github&logoColor=black)](https://st4lt.github.io) | [![github](https://img.shields.io/badge/@st4lt-00ff00?style=for-the-badge&logo=github&logoColor=black)](https://github.com/st4lt) | [![telegram](https://img.shields.io/badge/@st4lt_dev-00ff00?style=for-the-badge&logo=telegram&logoColor=black)](https://t.me/st4lt_dev) | [![email](https://img.shields.io/badge/st4ltdev-00ff00?style=for-the-badge&logo=gmail&logoColor=black)](mailto:st4ltdev@yandex.ru) | <br>
   
   ### 🎮 ВЫБЕРИ ЯЗЫК / CHOOSE LANGUAGE 🎮
   
