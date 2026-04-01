@@ -26,7 +26,6 @@ Turning ideas into working code.</span>
 
 <pre>
 <span style="color: #8be9fd"><strong>🚀 Current Projects</strong>
-
 🌐 <strong>Web Site Messenger</strong>
    Telegram alternative built with Python/Tkinter/SQLite
 
