@@ -8,7 +8,7 @@
 <br>
 
 <pre>
-<span style="color: #50fa7b">$</span> <span style="color: #f1fa8c">whoami</span>
+<span style="color: #f1fa8c">whoami</span>
 <span style="color: #8be9fd">Python Developer & Game Creator
 From 3D arenas to secure vaults</span>
 </pre>
@@ -22,7 +22,6 @@ From 3D arenas to secure vaults</span>
 </pre>
 
 <pre>
-<span style="color: #50fa7b">$</span> <span style="color: #f1fa8c">ls -la /skills/</span>
 <span style="color: #8be9fd"><strong>🛠 Стек технологий</strong>
 • Языки: Python, HTML, SQL
 • Фреймворки: Pygame, Ursina, Tkinter, Flet
@@ -30,7 +29,6 @@ From 3D arenas to secure vaults</span>
 </pre>
 
 <pre>
-<span style="color: #50fa7b">$</span> <span style="color: #f1fa8c">./projects --status</span>
 <span style="color: #8be9fd"><strong>🚀 Текущие проекты</strong>
 
 🌐 <strong>Web Site Messenger</strong>
