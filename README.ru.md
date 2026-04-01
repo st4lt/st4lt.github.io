@@ -23,14 +23,14 @@ From 3D arenas to secure vaults</span>
 
 ## 🚀 Текущие проекты
 🌐 **Web Site Messenger [Альтернатива Telegram]**  
-<span style="color: #ff8c00;">Python/Tkinter/SQLite</span>
+<font style="color: #ff8c00;">Python/Tkinter/SQLite</font>
 
 🗡️ **Vindicta Imperatoris**  
-   <span style="color: #ff8c00;">3D-экшен на движке Ursina</span>  
+<font color="#ff8c00">3D-экшен на движке Ursina</font>
    🔗 [Vindi](https://github.com/st4lt/Vindicta-Imperatoris)
 
 🔐 **Password Vault**  
    Защищенное хранилище паролей
-   <span style="color: #ff8c00;">Flet/Tkinter</span>
+   <font color="#ff8c00">Flet/Tkinter</font>
 <br>
 © 2026 st4lt
